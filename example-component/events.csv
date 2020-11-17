@@ -1,0 +1,14 @@
+component_id,id,name,description,tags,type_hint,file,line
+8a0774ae-4cba-4984-9029-7d1d7eeaac62,1073741822,MODALITY_PRODUCED_EXTERNAL_REPORT,The probe produced a log report for transmission to the backend for external analysis,INTERNAL,,,
+8a0774ae-4cba-4984-9029-7d1d7eeaac62,1073741821,MODALITY_LOG_ITEMS_MISSED,"Some log items were overwritten without successfully getting reported to the collector, the number of missed entries is storedin the payload",INTERNAL,u32,,
+8a0774ae-4cba-4984-9029-7d1d7eeaac62,1073741820,MODALITY_LOGICAL_CLOCK_OVERFLOWED,A logical clock's count reached the maximum trackable value,INTERNAL,u32,,
+8a0774ae-4cba-4984-9029-7d1d7eeaac62,1073741819,MODALITY_NUM_CLOCKS_OVERFLOWED,The probe did not have enough memory reserved to store enough logical clocks to track all of the unique neighbors that attempt to communicate with it,INTERNAL,,,
+8a0774ae-4cba-4984-9029-7d1d7eeaac62,1073741818,MODALITY_INSUFFICIENT_REPORT_BUFFER_SIZE,The report destination buffer is too small to fit a header and/or the frontier clocks,INTERNAL,,,
+8a0774ae-4cba-4984-9029-7d1d7eeaac62,1073741817,MODALITY_PROBE_INITIALIZED,The probe successfully initialized itself,INTERNAL,,,
+8a0774ae-4cba-4984-9029-7d1d7eeaac62,1073741816,MODALITY_INVALID_NEXT_EPOCH_SEQ_ID,"The probe is configured to track restarts, but the user's implementation returned an invalid zero value or a None option variant.",INTERNAL,,,
+8a0774ae-4cba-4984-9029-7d1d7eeaac62,1073741815,MODALITY_WALL_CLOCK_TIME_ONLY,Reserved for indicating wall clock time,INTERNAL,,,
+8a0774ae-4cba-4984-9029-7d1d7eeaac62,1,IP_STACK_INITIALIZED,TCP/IP stack initialized,ip,,main.rs,129
+8a0774ae-4cba-4984-9029-7d1d7eeaac62,2,IP_STACK_STATE_CHANGE,IP stack had a state change,ip,,main.rs,148
+8a0774ae-4cba-4984-9029-7d1d7eeaac62,3,SOCKET_LISTENING,Socket listening,socket;listen,u16,main.rs,159
+8a0774ae-4cba-4984-9029-7d1d7eeaac62,4,SENT_A_MESSAGE,Sent a message,socket;message,,main.rs,175
+8a0774ae-4cba-4984-9029-7d1d7eeaac62,5,MALFORMED_PACKET,Received a malformed or unknown packet,ip,,main.rs,196
